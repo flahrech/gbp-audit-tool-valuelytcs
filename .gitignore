@@ -1,4 +1,6 @@
 .env
+leads.db
 venv/
 __pycache__/
 *.pyc
+.vscode/

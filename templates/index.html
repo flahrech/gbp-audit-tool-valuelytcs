@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valuelytics GBP Audit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 40px auto;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Google Business Profile Audit</h1>
+
+<form method="post" action="/app/analyze">
+    <label>
+        Business Name
+        <input type="text" name="business_name" required>
+    </label>
+
+    <label>
+        Address / City
+        <input type="text" name="address" required>
+    </label>
+
+    <label>
+        Primary Category
+        <input type="text" name="category" required>
+    </label>
+
+    <button type="submit">Run Audit</button>
+</form>
+
+</body>
+</html>

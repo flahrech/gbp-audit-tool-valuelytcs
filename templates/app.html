@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Valuelytics GBP Audit</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; max-width: 900px; }
+    .card { border: 1px solid #ddd; border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+    label { display:block; margin-top: 10px; font-weight: 600; }
+    input { width: 100%; padding: 10px; margin-top: 6px; border: 1px solid #ccc; border-radius: 8px; }
+    button { margin-top: 14px; padding: 10px 14px; border: 0; border-radius: 8px; cursor: pointer; }
+    .muted { color: #666; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <h1>Valuelytics GBP Audit</h1>
+  <p class="muted">Get a quick competitor benchmark and an optimization score for your Google Business Profile.</p>
+
+  <div class="card">
+    <form method="post" action="/app/analyze">
+      <label>Business Name</label>
+      <input name="business_name" required placeholder="Petra Mediterranean Restaurant" />
+
+      <label>City or Address</label>
+      <input name="address" required placeholder="Tampa, FL" />
+
+      <label>Primary Category</label>
+      <input name="category" required placeholder="Mediterranean restaurant" />
+
+      <label>Email (optional, for report delivery and updates)</label>
+      <input name="email" placeholder="name@company.com" />
+
+      <button type="submit">Run Audit</button>
+    </form>
+  </div>
+
+  <p class="muted">
+    Note: Google Trends may occasionally be rate limited. Your audit still runs even if Trends is unavailable.
+  </p>
+</body>
+</html>
